@@ -1,0 +1,110 @@
+body{
+
+    margin: 0;
+}
+
+#mainTitle{
+margin-top: -5px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    display: flex;
+background-color: seagreen;
+    width: 100vw;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: bottom;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 80vh;
+
+}
+
+#container > div {
+    width: 200px;
+    height: 300px;
+    margin: 1em;
+    background-color: DarkSeaGreen;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block > :nth-child(1) {
+    background-color: ivory;
+    width: 180px;
+    flex: 2 1 0;
+    margin: 10px 0;
+}
+
+.block > :nth-child(2) {
+    background-color: LightPink;
+    width: 180px;
+    flex: 1 1 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#sidebar{
+    position: fixed;
+    height: 80vh;
+    background-color: darkgrey;
+    padding: 200px;
+
+
+}
+
+#sidebarposition{
+
+    transition: 0.25s ease-out;
+    float: right;
+    margin-right: 0px;
+
+}
+#backdrop{
+display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,50%);
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+#cookieinfo{
+    margin-top: 10px;
+    background-color: grey;
+}
+#pickleinfo{
+    margin-top: 10px;
+    background-color: grey;
+}
+#breadinfo{
+    margin-top: 10px;
+    background-color: grey;
+}
+img{
+    height: 100px;
+}
+#cookiepic{
+    opacity: 0;
+}
+#picklepic{
+    opacity: 0;
+}
+#breadpic{
+    opacity: 0;
+}
+#cookieplus{
+    opacity: 1;
+}
+#pickleplus{
+    opacity: 1;
+}
+#breadplus{
+    opacity: 1;
+}

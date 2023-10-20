@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Webshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="backdrop" onclick="hidemodal()"></div>
+<div id="sidebarposition">
+<div id="sidebar">
+    <div id="realsidebar">
+    <h2 id="youbuy"></h2>
+    <img src="img/cookies.jpg" id="cookiepic">
+    <div id="cookieadder"></div>
+        <div id="cookiedoc"></div>
+    <img src="img/pickles.png" id="picklepic">
+    <div id="pickleadder"></div>
+        <div id="pickledoc"></div>
+    <img id="breadpic" src="img/bread.png">
+    <div id="breadadder"></div>
+        <div id="breaddoc"></div>
+    <h2 id="total"></h2>
+    <h2 id="totalprice"></h2>
+    <button id="buy" onclick="buy()">Buy</button>
+    <button id="sell" onclick="sell()">Sell</button>
+    </div>
+</div>
+</div>
+
+<h1 id="mainTitle">WEBSHOP</h1>
+
+
+<div id="container">
+    <div class="block">
+        <img src="img/cookies.jpg" onclick=" addtobar(); opensidebar(); showmodal()" onmouseover="buycookoie()" onmouseout="hideinfocookie()">
+        <div>Cookies
+
+            <p>stock</p>
+            <p id="cookiestock">5</p>
+            <p>2 euro</p>
+
+            <button onclick="removecookie()" onmouseover="showinfomincookie()"onmouseout="hideinfocookie()">-</button>
+            <button id="cookie" onclick=" addtobar(); opensidebar(); showmodal()"onmouseover="buycookoie()"onmouseout="hideinfocookie()">0</button>
+            <button id="cookieplus" onclick="addcookie()" onmouseover="showinfopluscookie()"onmouseout="hideinfocookie()">+</button>
+
+        </div>
+        <div id="cookieinfo"></div>
+    </div>
+
+    <div class="block">
+        <img src="img/pickles.png"onclick="opensidebar(); addtobar(); showmodal()"onmouseover="buypickle()"onmouseout="hideinfopickle()">
+        <div>Pickles
+            <p>stock</p>
+            <p id="picklestock">10</p>
+            <p>1 euro</p>
+
+            <button onclick="removepickle()"onmouseover="showinfominpickle()"onmouseout="hideinfopickle()">-</button>
+            <button id="pickle" onclick="opensidebar(); addtobar(); showmodal()"onmouseover="buypickle()"onmouseout="hideinfopickle()">0</button>
+            <button id="pickleplus" onclick="addpickle()"onmouseover="showinfopluspickle()"onmouseout="hideinfopickle()">+</button>
+
+        </div>
+        <div id="pickleinfo"></div>
+    </div>
+    <div class="block">
+        <img src="img/bread.png" onclick="opensidebar(); addtobar(); showmodal()"onmouseover="buybread()"onmouseout="hideinfobread()">
+        <div>Bread
+            <p>stock</p>
+            <p id="breadstock">5</p>
+            <p>10 euro</p>
+
+            <button onclick="removebread()"onmouseover="showinfominbread()"onmouseout="hideinfobread()">-</button>
+            <button id="bread" onclick="opensidebar(); addtobar(); showmodal()"onmouseover="buybread()"onmouseout="hideinfobread()">0</button>
+            <button id="breadplus" onclick="addbread()"onmouseover="showinfoplusbread()"onmouseout="hideinfobread()">+</button>
+        </div>
+        <div id="breadinfo"></div>
+    </div>
+</div>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
